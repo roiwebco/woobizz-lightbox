@@ -224,7 +224,7 @@ $woobizz_lightbox_fullbackground=$trasnform_woobizz_lightbox_background.",".$woo
 <style>
 .lightbox {
  display: none;
- max-width:".$woobizz_lightbox_content_maxwidth."px;
+ max-width:".$woobizz_lightbox_content_maxwidth."px!important;
  }
 .featherlight .featherlight-close-icon {
     border-radius: 50%;
@@ -232,7 +232,7 @@ $woobizz_lightbox_fullbackground=$trasnform_woobizz_lightbox_background.",".$woo
     background:white;
 }
 .featherlight:last-of-type {
-    background:rgba(".$woobizz_lightbox_fullbackground.");
+    background:rgba(".$woobizz_lightbox_fullbackground."px!important);
 }
 .featherlight .featherlight-content {
   

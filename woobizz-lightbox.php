@@ -3,9 +3,9 @@
  * Plugin Name: Woobizz LightBox
  * Plugin URI: https://woobizz.com
  * Description: Woocommerce Storefront LightBox Customiser
- * Author: Roiweb.co
- * Author URI: https://woobizz.com
- * Version: 1.0.0
+ * Author: ROIWEB.CO
+ * Author URI: https://roiweb.co
+ * Version: 1.0.1
  * Text Domain: woobizz-lightbox
  * Domain Path: /lang/
  */
