@@ -214,39 +214,38 @@ $woobizz_lightbox_paddingfull=$woobizz_lightbox_paddingtopsize.$woobizz_lightbox
 //----------------------------------------------------------------------------	
 //Background Color
 $woobizz_lightbox_backgroundcolor= get_option(WOOBIZZLIGHTBOX.'_woobizz_lightbox_backgroundcolor');
+//echo $woobizz_lightbox_backgroundcolor;
 $woobizz_lightbox_backgroundopacity= get_option(WOOBIZZLIGHTBOX.'_woobizz_lightbox_backgroundopacity');
 $trasnform_woobizz_lightbox_background=woobizz_lightbox_hextorgb($woobizz_lightbox_backgroundcolor);
 $woobizz_lightbox_fullbackground=$trasnform_woobizz_lightbox_background.",".$woobizz_lightbox_backgroundopacity;
 //----------------------------------------------------------------------------    
 //START SHOWING CSS OPTIONS
 //----------------------------------------------------------------------------
- echo"
+echo"
 <style>
-.lightbox {
- display: none;
- max-width:".$woobizz_lightbox_content_maxwidth."px!important;
- }
-.featherlight .featherlight-close-icon {
-    border-radius: 50%;
-    margin: 15px;
-    background:white;
-}
-.featherlight:last-of-type {
-    background:rgba(".$woobizz_lightbox_fullbackground."px!important);
-}
-.featherlight .featherlight-content {
-  
-  box-shadow:".$woobizz_lightbox_shadowfull."; 
-  border:".$woobizz_lightbox_borderfull."!important;
-}
-.featherlight .featherlight-content {
-    padding:".$woobizz_lightbox_paddingfull."!important;
-    border-bottom: 0px solid transparent;
-	
-}
-.wb-lightbox-content{
-	margin:".$woobizz_lightbox_marginfull."!important; 
-}
+	.lightbox {
+		display: none;
+		max-width:".$woobizz_lightbox_content_maxwidth."px!important;
+	}
+	.featherlight .featherlight-close-icon {
+		border-radius: 50%;
+		margin: 15px;
+		background:white;
+	}
+	.featherlight:last-of-type {
+		background:rgba(".$woobizz_lightbox_fullbackground.")!important;
+	}
+	.featherlight .featherlight-content {	
+		box-shadow:".$woobizz_lightbox_shadowfull."; 
+		border:".$woobizz_lightbox_borderfull."!important;
+	}
+	.featherlight .featherlight-content {
+		padding:".$woobizz_lightbox_paddingfull."!important;
+		border-bottom: 0px solid transparent;
+	}
+	.wb-lightbox-content{
+		margin:".$woobizz_lightbox_marginfull."!important; 
+	}
 </style>";
 }
 add_action('wp_footer', 'woobizz_lightbox_allcssoptions', 100);
