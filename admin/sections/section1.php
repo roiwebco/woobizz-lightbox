@@ -6,7 +6,7 @@
  //Enqueue CSS
 function woobizz_enqueue_featherlight_min_css() {
 	
-	wp_register_style('featherlight-min', plugins_url('/woobizz-lightbox/css/featherlight.min.css'));
+	wp_register_style('featherlight-min', plugins_url('/woobizz-lightbox/admin/css/featherlight.min.css'));
 	wp_enqueue_style('featherlight-min');
 	
 }
@@ -14,19 +14,11 @@ add_action( 'wp_enqueue_scripts', 'woobizz_enqueue_featherlight_min_css' );
 //Enqueue JS
 function woobizz_enqueue_featherlight_min_js() {
 	
-	wp_register_script('featherlight-min-js', plugins_url('/woobizz-lightbox/js/featherlight.min.js'), array('jquery'), '1.7.7', true );
+	wp_register_script('featherlight-min-js', plugins_url('/woobizz-lightbox/admin/js/featherlight.min.js'), array('jquery'), '1.7.7', true );
 	wp_enqueue_script('featherlight-min-js');
+	
 }
 add_action( 'wp_enqueue_scripts', 'woobizz_enqueue_featherlight_min_js' );   
-/**
-function woobizz_enqueue_jquery_js() {
-	
-	wp_register_script( 'jquery-woobizz-lightbox', plugins_url('/woobizz-lightbox/js/jquery-3.2.1.min.js'), array('jquery'), '3.2.1', true );
-	wp_enqueue_script( 'jquery-woobizz-lightbox' );
-		
-}
-add_action( 'wp_enqueue_scripts', 'woobizz_enqueue_jquery_js' );  
-*/
 
 //---------------------------------------------------------------------------- 
 //START HEX TO RGB FUNCTION

@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: Woobizz LightBox
+ * Plugin Name: Woobizz Lightbox
  * Plugin URI: https://woobizz.com
- * Description: Woocommerce Storefront LightBox Customiser
+ * Description: Woocommerce Storefront Lightbox Customiser
  * Author: WOOBIZZ
  * Author URI: https://woobizz.com
- * Version: 1.0.2
+ * Version: 1.0.3
  * Text Domain: woobizz-lightbox
  * Domain Path: /lang/
  */
