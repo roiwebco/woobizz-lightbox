@@ -246,6 +246,7 @@ echo"
 	.wb-lightbox-content{
 		margin:".$woobizz_lightbox_marginfull."!important; 
 	}
+	
 </style>";
 }
 add_action('wp_footer', 'woobizz_lightbox_allcssoptions', 100);
